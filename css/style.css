@@ -1,0 +1,271 @@
+body {
+    background-color: #0F172A;
+    color: #fff;
+}
+
+.serious-img {
+    border: solid 5px #ffffff;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    min-width: 600px;
+}
+
+.center-container {
+    text-align: center;
+    z-index: 1;
+}
+
+.serious-container {
+    position: relative;
+}
+
+.overlay {
+    border-radius: 7px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fff;
+    height: 100%; /* Set the height of your container */
+}
+
+.chat {
+    position: absolute;
+    z-index: 10;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    left: 50%;
+    margin-bottom: 10px;
+    bottom: 0;
+}
+
+.bubble {
+    max-width: 75%;
+    width: auto;
+    height: auto;
+    background: #ebebebab;
+    border-radius: 5px;
+    position: relative;
+    margin: 10px auto 3px auto;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.bubble.alt {
+    margin: 10px 25px 3px 0px;
+    background: #DCF8C6;
+    float: right;
+}
+
+.bubble.follow {
+    margin: 2px 0 3px 25px;
+}
+
+.bubble.altfollow {
+    margin: 2px 25px 3px 0px;
+    background: #DCF8C6;
+    float: right;
+}
+
+.name {
+    text-align: start;
+    display: inline-table;
+    padding: 8px 0 0 0;
+    width: 100%;
+}
+
+.txt {
+    text-align: start;
+    display: inline-table;
+    padding: 0px 0 8px 0;
+    width: 100%;
+}
+
+.mname {
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-table;
+    padding: 0 0 0 15px;
+    margin: 0 0 4px 0;
+    color: #3498db;
+}
+
+.mname.alt {
+    color: #2ecc51;
+}
+
+.message {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 15px 0 15px;
+    margin: auto;
+    color: #2b2b2b;
+    display: block;
+}
+
+.timestamp {
+    font-size: 11px;
+    margin: auto;
+    padding: 0 15px 0 0;
+    display: table;
+    float: right;
+    position: relative;
+    text-transform: uppercase;
+    color: #999;
+}
+
+/* .bubble-arrow {
+    position: absolute;
+    float: left;
+    left: -11px;
+    top: 0px;
+} */
+
+.bubble-arrow.alt {
+    bottom: 20px;
+    left: auto;
+    right: 4px;
+    float: right;
+}
+
+/* .bubble-arrow:after {
+    content: "";
+    position: absolute;
+    border-top: 15px solid #ebebeb;
+    border-left: 15px solid transparent;
+    border-radius: 4px 0 0 0px;
+    width: 0;
+    height: 0;
+} */
+
+.bubble-arrow.alt:after {
+    border-top: 15px solid #DCF8C6;
+    transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        width: 100%;
+    }
+
+    .timestamp {
+        display: none;
+        color: red;
+    }
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  #textArray.typing-animation {
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    animation: typing 6s steps(120);
+  }
+
+.team-container {
+    background-color: #192644;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.team-container {
+    background-color: #192644;
+    border-radius: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-member {
+    box-shadow: 0 0 15px #ffffff;
+    text-align: center;
+    border: 4px #ffffff solid;
+    padding: 20px;
+    border-radius: 18px;
+    margin: 10px;
+}
+.team-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.team-img {
+    border-radius: 18px;
+    max-width: 128px;
+}
+.center-container{
+    margin-top: 25vh;
+}
+
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    z-index: 9999;
+  }
+
+  .logo {
+    max-width: 20%;
+    max-height: 20%;
+  }
+
+  #start{
+    top: 8vh; 
+    height: 50px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #192644;
+}
+#start:hover{
+    transition: 2s;
+    background-color: #3498db;
+}
+

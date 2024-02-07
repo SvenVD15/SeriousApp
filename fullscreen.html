@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="fullscreen">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/fullscreen.css">
+    <link rel="stylesheet" href="/css/snow.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Serious App</title>
+</head>
+
+<body class="fullscreen">
+
+    <div class="app-root">
+
+        <div class="fullscreen-container">
+            <div class="center-container relative">
+                <div class="serious-container relative">
+                    <div class="overlay max-w-full mx-auto">
+                        <div class="overlay-title">Crypto Gevaar😱😱😱😱</div>
+                    </div>
+                    <img id="srs-image" src="/img/placeholder.png" alt="temp img" class="serious-img max-w-full h-auto mx-auto">
+                    <audio id="slideAudio" src="/path/to/your/audio.mp3" loop></audio>
+                </div>
+                <div class="chat absolute z-10">
+                    <div class="msg">
+                        <div class="bubble">
+                            <div class="name">
+                                <span class="mname" id="nameArray"></span>
+                            </div>
+                            <div class="txt">
+                                <span class="message" id="textArray"></span>
+                            </div>
+                            <div class="bubble-arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons Row -->
+        <div class="justify-center flex p-2 button-row fixed bottom-0 w-full mb-10">
+            <a href="#" onclick="pressPlay()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded mr-2 text-xl" style="display: none;">🎬 Press Play</a>
+            <a href="#" onclick="firstImage()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded mr-2 text-xl">🏠</a>
+            <a href="#" onclick="prevImage()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded mr-2 text-xl">👈</a>
+            <a href="#" onclick="nextImage()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded text-xl">👉</a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center p-2 fixed bottom-0 w-full z-50">
+            © 2023 Groep 2 - Serious App
+        </footer>
+
+    </div>
+
+    <script src="/js/fullscreen.js"></script>
+
+</body>
+
+</html>
